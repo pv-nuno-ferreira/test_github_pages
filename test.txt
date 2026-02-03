@@ -1,0 +1,4 @@
+This is a sample text file for GitHub Pages rendering test.
+Edge case: special characters !@#$%^&*()_+
+Unicode: 你好, привет, مرحبا
+Emoji: 😀 🚀 🧠

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Pages POC - Edge Cases</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 2em; }
+        section { margin-bottom: 2em; }
+        img, svg { max-width: 300px; display: block; margin-top: 1em; }
+        pre { background: #f4f4f4; padding: 1em; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <h1>GitHub Pages POC - Edge Cases</h1>
+    <section>
+        <h2>SVG Rendering</h2>
+        <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+        </svg>
+        <p>SVG above should render correctly.</p>
+    </section>
+    <section>
+        <h2>Image Rendering (PNG)</h2>
+        <img src="https://via.placeholder.com/150.png" alt="PNG Example">
+        <p>PNG image above should render.</p>
+    </section>
+    <section>
+        <h2>Image Rendering (JPG)</h2>
+        <img src="https://via.placeholder.com/150.jpg" alt="JPG Example">
+        <p>JPG image above should render.</p>
+    </section>
+    <section>
+        <h2>Text File Rendering</h2>
+        <pre>
+This is a sample text file content.
+Edge case: special characters !@#$%^&*()_+
+        </pre>
+    </section>
+    <section>
+        <h2>Markdown Rendering (via HTML)</h2>
+        <div>
+            <h3>Sample Markdown</h3>
+            <pre>
+# Heading
+- List item 1
+- List item 2
+**Bold text**
+            </pre>
+        </div>
+    </section>
+    <section>
+        <h2>HTML with Script</h2>
+        <button onclick="alert('Script executed!')">Test Script</button>
+        <p>Click the button to test JavaScript execution.</p>
+    </section>
+    <section>
+        <h2>Edge Case: Non-UTF8 Characters</h2>
+        <pre>
+Unicode: 你好, привет, مرحبا
+Emoji: 😀 🚀 🧠
+        </pre>
+    </section>
+</body>
+</html>
